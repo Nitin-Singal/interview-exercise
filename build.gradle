@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.acme'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.27.0'
+    testImplementation group: 'org.easymock', name: 'easymock', version: '4.0.2'
+}
